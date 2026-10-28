@@ -5,7 +5,7 @@ set "PYTHONHOME="
 set "PYTHONPATH="
 set "TASK_SETUP_LOG=%CD%\setup-diagnostic.txt"
 set "TASK_VENV_PYTHON=%CD%\.venv\Scripts\python.exe"
-> "%TASK_SETUP_LOG%" echo Task Management System - Python startup diagnostic
+> "%TASK_SETUP_LOG%" echo TaskNest - Python startup diagnostic
 
 if not exist "task_manager\app.py" goto extract_project
 if not exist "requirements.txt" goto extract_project

@@ -1,8 +1,8 @@
-# Task Management System
+# TaskNest
 
 Prepared by **Kasinath Shelly**, with guidance from **Thendral Kala Rajendran**.
 
-A Grade 12 Computer Science practical using Python, Tkinter, and MySQL. It stores tasks with due dates and priorities, and supports search, status filtering, completion, and deletion.
+TaskNest is a Grade 12 Computer Science practical using Python, Tkinter, and MySQL. It stores tasks with due dates and priorities, and supports search, status filtering, completion, and deletion. Click **Calendar** to pick an optional due date; use **Clear date** to remove it. The calendar uses Python's built-in libraries and needs no extra package.
 
 ## Quick start
 
@@ -25,11 +25,19 @@ Python reference: [environment variables and the -E option](https://docs.python.
 
 You can also do the setup manually: install MySQL Server, run `schema.sql`, install `requirements.txt`, set the account in `task_manager/mysql_config.json`, and run `python3 task_manager/app.py`.
 
+## Source files
+
+- `task_manager/app.py` builds the TaskNest screen and handles actions.
+- `task_manager/calendar_picker.py` builds the calendar and returns the chosen date.
+- `task_manager/database.py` handles MySQL queries.
+- `task_manager/db_config.py` reads the local MySQL settings.
+
 ## Project files
 
-- [Complete project ZIP](downloads/Kasinath%20Shelly%20-%20Task%20Management%20System.zip)
+- [Complete project ZIP](downloads/Kasinath%20Shelly%20-%20TaskNest.zip)
 - [Project report PDF](Task_Management_Project_File.pdf)
 - [Illustrative UI preview](Task_Manager_UI_Preview.png)
-- [Application](task_manager/app.py), [database functions](task_manager/database.py), and [database configuration](task_manager/db_config.py)
+- [Illustrative calendar preview](TaskNest_Calendar_Preview.png)
+- [Application](task_manager/app.py), [calendar](task_manager/calendar_picker.py), and [database](task_manager/database.py)
 
-The preview is an illustrative sample screen. The report includes the full source listings, database design, index, and setup instructions.
+The images are illustrative sample screens. The report includes the full source listings, database design, index, and setup instructions.
