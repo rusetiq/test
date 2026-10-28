@@ -1,0 +1,9 @@
+.venv/
+.venv-broken-*/
+__pycache__/
+*.py[cod]
+**/mysql_config.json
+setup-diagnostic.txt
+.DS_Store
+.env
+.env.local
